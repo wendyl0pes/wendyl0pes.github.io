@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 
+<title>ESILV - Blockchain Programming - TP/TD 3e année | Mubiz</title>
+<meta name="description"
+	content="Sujet de TP/TD Blockchain Programming pour les 3e année de l'ESILV" />
+<meta name="keywords" content="ESILV, TP," />
 
+<meta name="robots" content="index,follow" />
+<meta name="rating" content="safe for kids" />
+<meta name="revisit-after" content="14 days" />
+<meta name="author" content="Mubiz" />
+
+<meta name="geo.placename" content="France" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="GitHub - Albin CAUDERLIER" />
+<meta property="og:locale" content="fr_FR" />
 
 <meta name="theme-color" content="#009999">
 
@@ -39,7 +53,6 @@
 
 </head>
 <body>
-
 	<div class="container theme-showcase" role="main">
 		<div class="jumbotron">
 			<h1>Bitcoin</h1>
@@ -122,10 +135,11 @@
 		</div>
 	</section>
 
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script> $(document).ready(function() {
+	<script>$(document).ready(function() {
 	$.ajax({
 		url : "https://api.blockcypher.com/v1/btc/main",
 		dataType : "json",
@@ -141,5 +155,6 @@
 		}
 	});
 });</script>
+
 </body>
 </html>
