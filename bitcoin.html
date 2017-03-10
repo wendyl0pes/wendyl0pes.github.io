@@ -139,5 +139,23 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script> $(document).ready(function() {
+	$.ajax({
+		url : "https://api.blockcypher.com/v1/btc/main",
+		dataType : "json",
+		contentType : "application/json; charset=utf-8",
+		type : "GET",
+		timeout:	"5000",
+		async : false,
+
+		success : function(data) {
+			$('#bitcoin_block_number').append(data.height);
+		},
+
+		error : function(xhr, status, err) {
+			$('#bitcoin_block_number').append(err+" N/A");
+		}
+	});
+});</script>
 </body>
 </html>
